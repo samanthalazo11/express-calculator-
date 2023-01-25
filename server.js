@@ -37,6 +37,7 @@ app.get('/calc/:num1/:num2' ,  (req, res) => {
         }
         else if (operation === 'exponents'){
             const exponents = Math.pow(num1,num2);
+            res.send(`The answer is ${exponents}`)
         }
         else {
             res.send ('There is no operation')
